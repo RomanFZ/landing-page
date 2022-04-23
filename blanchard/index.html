@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./css/simplebar.css">
+  <link rel="stylesheet" href="./css/choices.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/lightbox.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+  <script defer src="https://unpkg.com/tippy.js@6"></script>
+  <script defer src="./js/inputmask.min.js"></script>
+  <script defer src="./js/just-validate.min.js"></script>
+  <script defer src="./js/accordion.js"></script>
+  <script defer src="./js/choices.min.js"></script>
+  <script defer src="./js/choices.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/swiperEditions.js"></script>
+  <script defer src="./js/swiperEvents.js"></script>
+  <script defer src="./js/simplebar.min.js"></script>
+  <script defer src="./js/tooltip.js"></script>
+  <script defer src="./js/tabs.js"></script>
+  <script defer src="./js/catalog.js"></script>
+  <script defer src="./js/form.js"></script>
+  <script defer src="./js/map.js"></script>
+  <script defer src="./js/lightbox.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/scroll-link.js"></script>
+
+</head>
+
+<body>
+  <div class="top-wrapper">
+    <header class="top-wrapper__header">
+      <div class="container">
+        <div class="header-top-container">
+          <div class="header-top">
+            <button class="burger-menu"></button>
+            <a class="header-top__logo-link"><img src="img/1920/logo.svg" class="logo-link" alt="логотип"></a>
+            <div class="nav">
+              <ul class="nav__list">
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#about-us"><span
+                      class="nav__list__item-link__text">О нас</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#gallery"><span
+                      class="nav__list__item-link__text">Галерея</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#catalog"><span
+                      class="nav__list__item-link__text">Каталог</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#events"><span
+                      class="nav__list__item-link__text">События</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#editions"><span
+                      class="nav__list__item-link__text">Издания</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#project"><span
+                      class="nav__list__item-link__text">Проекты</span></a></li>
+                <li class="nav__list__item"><a class="nav__list__item-link js-scroll-link" href="#contacts"><span
+                      class="nav__list__item-link__text">Контакты</span></a></li>
+              </ul>
+              <a class="personal-area-link" href="">
+                <span class="personal-area-link__content">
+                  <svg class="personal-area-link__arrow" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
+                      fill="currentColor" />
+                  </svg>
+                  <span class="personal-area-link__text">Войти</span>
+                </span>
+              </a>
+            </div>
+            <form action="/" class="search-form js-form">
+              <div class="js-close search-form__btn-close"></div>
+                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+              <button class="js-open-search search-form__btn btn-search-link">
+                <svg class="link-text" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695"
+                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="header-bottom-container">
+          <div class="header-bottom">
+            <div class="menu">
+              <ul class="menu__list reset-list">
+                <li class="menu__item">
+                  <button class="menu__item-btn js-header-dropdown-btn" data-path="one">
+                    <span class="menu__item-heading">Реализм</span>
+                    <span class="menu__item-icon"></span>
+                  </button>
+                  <div class="menu__dropdown js-header-drop" data-target="one">
+                    <div class="menu__dropdown-wrap" data-simplebar>
+                      <ul class="menu__drop-list reset-list">
+                        <li class="menu__dropdown-item"><a href=""
+                            class="menu__item-link menu__item-link--tintoretto"><span
+                              class="menu__item-text">Тинторрето</span></a></li>
+                        <li class="menu__dropdown-item"><a href=""
+                            class="menu__item-link menu__item-link--fridrih">Фридрих</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__item-btn js-header-dropdown-btn" data-path="two">
+                    <span class="menu__item-heading">Импрессионизм</span>
+                    <span class="menu__item-icon"></span>
+                  </button>
+                  <div class="menu__dropdown js-header-drop" data-target="two">
+                    <div class="menu__dropdown-wrap" data-simplebar>
+                      <ul class="menu__drop-list">
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Фридрих</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__item-btn js-header-dropdown-btn" data-path="three">
+                    <span class="menu__item-heading">Постимпрессионизм</span>
+                    <span class="menu__item-icon"></span>
+                  </button>
+                  <div class="menu__dropdown js-header-drop" data-target="three">
+                    <div class="menu__dropdown-wrap" data-simplebar>
+                      <ul class="menu__drop-list">
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Фридрих</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__item-btn js-header-dropdown-btn" data-path="four">
+                    <span class="menu__item-heading">Авангард</span>
+                    <span class="menu__item-icon"></span>
+                  </button>
+                  <div class="menu__dropdown js-header-drop" data-target="four">
+                    <div class="menu__dropdown-wrap" data-simplebar>
+                      <ul class="menu__drop-list">
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Фридрих</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__item-btn js-header-dropdown-btn" data-path="five">
+                    <span class="menu__item-heading">Футуризм</span>
+                    <span class="menu__item-icon"></span>
+                  </button>
+                  <div class="menu__dropdown js-header-drop" data-target="five">
+                    <div class="menu__dropdown-wrap" data-simplebar>
+                      <ul class="menu__drop-list">
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Фридрих</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Фридрих</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Леонардо</a></li>
+                        <li class="menu__dropdown-item"><a href="" class="menu__item-link">Тинторрето</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-hero top-wrapper__hero">
+      <div class="container section-hero__container">
+        <div class="hero-bottom">
+          <h2 class="hero-bottom__heading">
+            Прикоснитесь к прекрасному
+          </h2>
+          <p class="hero-bottom__paragraph">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+            предпосылки для новых предложений.
+          </p>
+          <a class="hero-bottom__button button-fill" href="#contacts">Подписаться на рассылку</a>
+        </div>
+      </div>
+    </section>
+    <div class="slider-wrapper">
+      <div class="hero-slider swiper-container slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide castle-image"></div>
+          <div class="swiper-slide slide wood-image"></div>
+          <div class="swiper-slide slide sky-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="about-us">
+      <div class="container about-us">
+        <h2 class="about-us__heading">О нас</h2>
+        <p class="about-us__paragraph">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+          каждого участника как способного принимать собственные решения касаемо распределения внутренних
+          резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+          влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+          что высокое качество позиционных исследований создаёт необходимость включения в производственный
+          план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и
+          ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают
+          популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+    <section id="gallery" class="gallery">
+      <div class="container gallery-container">
+        <div class="gallery-left">
+          <h2 class="gallery-left__heading">Галерея</h2>
+          <div class="gallery-left__select">
+            <div class="gallery-left__select-title">Фильтр:</div>
+            <label for="select"></label><select id="select">
+              <option selected>Живопись</option>
+              <option>Рисунок</option>
+              <option>Скульптура</option>
+            </select>
+          </div>
+          <p class="gallery-paragraph">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+            <a class="gallery-paragraph-link" href=""><span
+                class="gallery-paragraph-link__text">авторизуйтесь</span></a>,
+            либо воспользуйтесь
+            лицензией.
+          </p>
+        </div>
+        <div class="gallery-right">
+          <div class="gallery-right__slider-nav">
+            <button class="swiper-button-prev gall-prev" aria-label="кнопка слаидер назад"></button>
+            <div class="swiper-pagination gall"></div>
+            <button class="swiper-button-next gall-next" aria-label="кнопка слаидер вперед"></button>
+          </div>
+          <div class="swiper-container gallery-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big1.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image1.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big2.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image2.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big3.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image3.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big4.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image4.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big5.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image5.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big6.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image6.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big16.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image16.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big17.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image17.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big18.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image18.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big7.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image7.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big8.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image8.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big9.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image9.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big10.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image10.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big11.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image11.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big12.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image12.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big19.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image19.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big20.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image20.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big21.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image21.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big13.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image13.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big14.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image14.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big15.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image15.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big22.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image22.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big23.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image23.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+              <div class="swiper-slide slide-gall">
+                <div class="gallery-slider__list-item fixed">
+                  <a class="increase" href="/img/1920/gallery-image-big24.jpg" data-lightbox="image-1" data-title="<div class=lightbox-description>
+                                    <h3 class=lightbox-description-heading-author >Название художника</h3>
+                                    <h4 class=lightbox-description-heading-picture>Название картины</h4>
+                                    <span class=lightbox-description-date>Годы написания пример 1931-1932г.</span>
+                                    <p class=lightbox-description-text>Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                                </div>"><img class="size-image" src="/img/1920/gallery-image24.jpg" alt="Слаид"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-paragraph show-left">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+          <a class="gallery-paragraph-link" href=""><span
+                  class="gallery-paragraph-link__text">авторизуйтесь</span></a>, либо воспользуйтесь
+          лицензией.
+        </div>
+      </div>
+
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="container catalog-container">
+        <div class="catalog__heading-tab">
+          <h2 class="catalog__heading">Каталог</h2>
+          <div class="catalog__tab-countries">
+            <ul class="tab-country-list">
+              <li class="tab-country-list__item">
+                <button class="tab-country-list__item-btn js-tab-btn" data-country-btn-acc="france-acc"
+                  data-country-btn="france" aria-label="выбрать французких художников">
+                  <img class="tab-countries-image" src="img/1920/France-flag.jpg" alt="флаг Франции">
+                </button>
+              </li>
+              <li class="tab-country-list__item">
+                <button class="tab-country-list__item-btn js-tab-btn" data-country-btn-acc="germany-acc"
+                  data-country-btn="germany" aria-label="выбрать немецких художников">
+                  <img class="tab-countries-image" src="img/1920/Germany-flag.jpg" alt="флаг Германии">
+                </button>
+              </li>
+              <li class="tab-country-list__item">
+                <button class="tab-country-list__item-btn  tab-active js-tab-btn" data-country-btn-acc="italy-acc"
+                  data-country-btn="italy" aria-label="выбрать итальянских художников">
+                  <img class="tab-countries-image" src="img/1920/Italy-flag.jpg" alt="флаг Италии">
+                </button>
+              </li>
+              <li class="tab-country-list__item">
+                <button class="tab-country-list__item-btn js-tab-btn" data-country-btn-acc="russia-acc"
+                  data-country-btn="russia" aria-label="выбрать русских художников">
+                  <img class="tab-countries-image" src="img/1920/Russia-flag.jpg" alt="флаг России">
+                </button>
+              </li>
+              <li class="tab-country-list__item">
+                <button class="tab-country-list__item-btn js-tab-btn" data-country-btn-acc="belgium-acc"
+                  data-country-btn="belgium" aria-label="выбрать бельгийских художников">
+                  <img class="tab-countries-image" src="img/1920/Belgium-flag.jpg" alt="флаг Бельгии">
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="catalog__paragraph tab-active js-tab-content" data-country-content="italy">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского
+          типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали.
+          Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.
+        </p>
+        <p class="catalog__paragraph js-tab-content" data-country-content="germany">
+          Немецкие художники, Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты.
+          Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.
+        </p>
+        <p class="catalog__paragraph js-tab-content" data-country-content="france">
+          Французкие художники, Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.
+        </p>
+        <p class="catalog__paragraph js-tab-content" data-country-content="russia">
+          Русские художники, Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты.
+          Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.
+        </p>
+        <p class="catalog__paragraph js-tab-content" data-country-content="belgium">
+          Бельгийские художники, Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          тексты. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.
+        </p>
+        <div class="catalog-author-accordion js-tab-content tab-active" data-country-accordion="italy-acc">
+          <div class="catalog-left">
+            <div class="catalog-left__author author-active" data-target="domeniko">
+              <img class="image-fixed" src="/img/1920/Domeniko.jpg" alt="Доменико Гирландайо">
+              <h3 class="catalog-left__heading">Доменико Гирландайо</h3>
+              <div class="catalog-left__years-old">2 июня 1448 — 11 января 1494.</div>
+              <p class="catalog-left__paragraph">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                династии,
+                которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где
+                юный
+                Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в
+                которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских
+                персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).
+              </p>
+            </div>
+            <div class="catalog-left__author" data-target="unknown">
+              <img class="image-fixed" src="/img/1920/unknow.jpg" alt="неизвестный">
+              <h3 class="catalog-left__heading">Что мы о нём знаем?</h3>
+              <p class="catalog-left__paragraph">
+                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+              </p>
+              <a class="catalog-left__link" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <div class="catalog-right">
+            <div class="catalog-right__accordeon">
+              <div id="accordion-italy">
+                <h3 class="accordion-heading"><span class="accordion-heading-focus">С 1400 по 1499
+                    гг.</span></h3>
+                <div>
+                  <ul class="accordion-list">
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Бенедетто ди
+                        Биндо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Бергоньоне,
+                        Амброджо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Биссоло,
+                        Франческо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Больтраффио,
+                        Джованни
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Бонсиньори,
+                        Франческо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Боттичини,
+                        Рафаэлло
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Брамантино
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Бреа, Людовико
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Бьяджо
+                        д’Антонио Туччи
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Веккьетта
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Андреа
+                        Верроккьо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn active-btn" data-path="domeniko">Доменико Гирландайо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Беноццо Гоццоли
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Граначчи,
+                        Франческо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Грегорио ди
+                        Чекко
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Джованни да
+                        Удине
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Джованни ди
+                        Паоло
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Джорджоне
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Парентино,
+                        Бернардо
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Пезеллино
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Пьетро
+                        Перуджино
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Перуцци,
+                        Бальдассаре
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Пизанелло
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn" data-path="unknown">Пинтуриккьо
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 2000 г.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-author-accordion js-tab-content" data-country-accordion="russia-acc">
+          <div class="catalog-left">
+            <div class="catalog-left__author-rus author-active" data-target="rublev">
+              <img class="image-fixed image-fixed-andrey" src="/img/1920/AndreyRublev.jpg" alt="Андрей Рублёв">
+              <h3 class="catalog-left__heading">Андрей Рублёв</h3>
+              <div class="catalog-left__years-old">1360 — 1430.</div>
+              <p class="catalog-left__paragraph">
+                Будущий художник Андрей Рублёв родился около 1360 г. Вся его жизнь связана была с
+                Москвой.
+                Он рано принял монашеский постриг и стал убеждённым последователем преподобного Сергия
+                Радонежского. Заветы игумена — самоотречение, деятельная любовь к людям, постоянное
+                духовное
+                общение с Богом — стали путеводными для художника.
+                Последние годы жизни художник провёл в московском Спасо-Андрониковом монастыре —
+                духовной
+                отрасли Троице-Сергиева монастыря. Он был окружён славой и почётом, имел много учеников
+                и
+                был достаточно богат, чтобы давать деньги на строительство каменного собора в монастыре.
+                Скончался старый мастер около 1430 г.
+              </p>
+            </div>
+            <div class="catalog-left__author-rus" data-target="unknown1">
+              <img class="image-fixed" src="/img/1920/unknow.jpg" alt="неизвестный">
+              <h3 class="catalog-left__heading">Что мы о нём знаем?</h3>
+              <p class="catalog-left__paragraph">
+                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+              </p>
+              <a class="catalog-left__link" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <div class="catalog-right">
+            <div class="catalog-right__accordeon">
+              <div id="accordion-russia">
+                <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
+                  <ul class="accordion-list">
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-rus" data-path="unknown1">Дионисий
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-rus" data-path="unknown1">Феофан
+                        Грек
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-rus active-btn" data-path="rublev">Андрей Рублёв
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 2000 г.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-author-accordion js-tab-content" data-country-accordion="france-acc">
+          <div class="catalog-left">
+            <div class="catalog-left__author-fra author-active" data-target="jack">
+              <img class="image-fixed image-fixed-andrey" src="/img/1920/JackDare.jpg" alt="Жак Даре">
+              <h3 class="catalog-left__heading">Жак Даре</h3>
+              <div class="catalog-left__years-old">1403 — 1470</div>
+              <p class="catalog-left__paragraph">
+                Точная дата рождения Жака Даре не известна. Считается, что он родился между 1403 и 1406
+                годами в Турне (сейчас — Бельгия), где и прожил значительную часть жизни. Он упоминается
+                в
+                сохранившихся документах в 1418 году как сосед по дому Робера Кампена (известен также
+                как
+                Флемальский мастер). Существует также документ, в котором упоминается, что двое учеников
+                Жак
+                Даре и Рогир ван дер Вейден были приняты в мастерскую Кампена в 1427 году. Спустя пять
+                лет,
+                в 1432 году, Даре сам стал свободным мастером и состоял в турнеской гильдии Святого
+                Луки.
+                Между 1434—1452 годами Даре выполнял работы для Аббатства Святого Вааса в Аррасе. Аббат
+                монастыря Жан дю Клерка на протяжении двадцати лет был важнейшим заказчиком и
+                покровителем
+                Даре. С 1464 года он жил в Брюгге, где занимался декоративными работами для торжеств в
+                связи
+                с бракосочетанием короля Карла Смелого. Считается, что Даре также работал в Лилле.
+                Упоминания о художнике обрываются в 1468 году. Предположительно он умер в 1468—1470 году
+                в
+                Брюгге.
+              </p>
+            </div>
+            <div class="catalog-left__author" data-target="unknown2">
+              <img class="image-fixed" src="/img/1920/unknow.jpg" alt="неизвестный">
+              <h3 class="catalog-left__heading">Что мы о нём знаем?</h3>
+              <p class="catalog-left__paragraph">
+                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+              </p>
+              <a class="catalog-left__link" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <div class="catalog-right">
+            <div class="catalog-right__accordeon">
+              <div id="accordion-france">
+                <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
+                  <ul class="accordion-list">
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-fra" data-path="unknown2">Робер
+                        Кампен
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-fra active-btn" data-path="jack">Жак
+                        Даре
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-fra" data-path="unknown2">Мельхиор
+                        Брудерлам
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 2000 г.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-author-accordion js-tab-content" data-country-accordion="germany-acc">
+          <div class="catalog-left">
+            <div class="catalog-left__author-ger author-active" data-target="martin">
+              <img class="image-fixed image-fixed-andrey" src="/img/1920/Martin_Schongauer.jpg" alt="Мартин Шонгауэр">
+              <h3 class="catalog-left__heading">Мартин Шонгауэр</h3>
+              <div class="catalog-left__years-old">1448 — 1491.</div>
+              <p class="catalog-left__paragraph">
+                Немецкий живописец, рисовальщик и гравёр периода Раннего Возрождения. Ориентировался на
+                творчество Рогира ван дер Вейдена, посетил Нидерланды; гравюры Шонгауэра оказали большое
+                влияние на европейское искусство.
+                Сын Каспара Шонгауэра, работавшего ювелиром в Аугсбурге. За красоту своих произведений
+                был
+                назван «Прекрасным Мартином» (Martin Shön или Hipsch Martin, у итальянцев Bel Martino).
+                Работал преимущественно в Кольмаре, в 1488 году переехал в Брейзах, где прожил последние
+                годы жизни.
+              </p>
+            </div>
+            <div class="catalog-left__author" data-target="unknown3">
+              <img class="image-fixed" src="/img/1920/unknow.jpg" alt="неизвестный">
+              <h3 class="catalog-left__heading">Что мы о нём знаем?</h3>
+              <p class="catalog-left__paragraph">
+                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+              </p>
+              <a class="catalog-left__link" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <div class="catalog-right">
+            <div class="catalog-right__accordeon">
+              <div id="accordion-germany">
+                <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
+                  <ul class="accordion-list">
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-ger active-btn" data-path="martin">Мартин Шонгауэр
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-ger" data-path="unknown3">Штефан
+                        Лохнер
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-ger" data-path="unknown3">Конрад Виц
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 2000 г.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-author-accordion js-tab-content" data-country-accordion="belgium-acc">
+          <div class="catalog-left">
+            <div class="catalog-left__author-bel author-active" data-target="bernhard">
+              <img class="image-fixed image-fixed-andrey" src="/img/1920/Bernhard.jpg" alt="Бернхард Штригель">
+              <h3 class="catalog-left__heading">Бернхард Штригель</h3>
+              <div class="catalog-left__years-old">1461 — 1528.</div>
+              <p class="catalog-left__paragraph">
+                Немецкий живописец, рисовальщик и гравёр периода Раннего Возрождения. Ориентировался на
+                творчество Рогира ван дер Вейдена, посетил Нидерланды; гравюры Шонгауэра оказали большое
+                влияние на европейское искусство.
+                Сын Каспара Шонгауэра, работавшего ювелиром в Аугсбурге. За красоту своих произведений
+                был
+                назван «Прекрасным Мартином» (Martin Shön или Hipsch Martin, у итальянцев Bel Martino).
+                Работал преимущественно в Кольмаре, в 1488 году переехал в Брейзах, где прожил последние
+                годы жизни.
+              </p>
+            </div>
+            <div class="catalog-left__author" data-target="unknown4">
+              <img class="image-fixed" src="/img/1920/unknow.jpg" alt="неизвестный">
+              <h3 class="catalog-left__heading">Что мы о нём знаем?</h3>
+              <p class="catalog-left__paragraph">
+                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+              </p>
+              <a class="catalog-left__link" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <div class="catalog-right">
+            <div class="catalog-right__accordeon">
+              <div id="accordion-belgium">
+                <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
+                  <ul class="accordion-list">
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-bel" data-path="unknown4">Альбрехт
+                        Альтдорфер
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-bel active-btn" data-path="bernhard">Бернхард Штригель
+                      </button>
+                    </li>
+                    <li class="accordion-list__item">
+                      <button class="accordion-list__item-btn-bel" data-path="unknown4">Йерг
+                        Ратгеб
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+                <h3 class="accordion-heading">C 2000 г.</h3>
+                <div class="accordion-description">
+                  <div class="accordion-description__icon">
+                    <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
+                  </div>
+                  <div class="accordion-description__content">
+                    <h3 class="content-heading">Здесь пока пусто</h3>
+                    <p class="content-paragraph">А в галерее вы всегда можете найти что-то
+                      интересное для себя</p>
+                    <a class="content-link" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="events">
+      <div class="container events">
+        <h2 class="events__heading">События</h2>
+        <div class="events-card-slider-320">
+          <div class="swiper-events-320">
+            <div class="swiper-wrapper events-swiper">
+              <div class="swiper-slide card-slide">
+                <div class="card">
+                  <img class="image-fixed-ev" src="/img/1920/event-1.jpg" alt="">
+                  <p class="card__description">
+                    <span class="card__description__place">Музей им. Щусева</span><br><span
+                      class="card__description__date">с 20 марта по 30 апреля</span>
+                  </p>
+                  <h3 class="card__heading">
+                    Книжная гравюра в живом восприятии
+                  </h3>
+                  <p class="card__paragraph">
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                    династии,
+                    которую продолжили его брат Давид и сын Ридольфо.
+                  </p>
+                  <a tabindex="0" class="card-link card-link-text card-link-text-dark"><span
+                      class="link-text">Подробнее</span></a>
+                </div>
+              </div>
+              <div class="swiper-slide card-slide">
+                <div class="card">
+                  <img class="image-fixed-ev" src="/img/1920/event-2.jpg" alt="">
+                  <div class="card__description">
+                    <span class="card__description__place2">ММОМА</span><br><span class="card__description__date2">24
+                      марта 19:00</span>
+                  </div>
+                  <h3 class="card__heading">
+                    «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                  </h3>
+                  <p class="card__paragraph">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким
+                    доказательством
+                    простого факта.
+                  </p>
+                  <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-center"><span
+                      class="link-text">Подробнее</span></a>
+                </div>
+              </div>
+              <div class="swiper-slide card-slide card-1024-none">
+                <div class="card">
+                  <img class="image-fixed-ev" src="/img/1920/event-3.jpg" alt="">
+                  <div class="card__description">
+                    <span class="card__description__place3">Еврейский музей</span><br><span
+                      class="card__description__date">с 31 марта по 21 апреля</span>
+                  </div>
+                  <h3 class="card__heading">
+                    Выставка «Формация 2020»
+                  </h3>
+                  <p class="card__paragraph">
+                    Идейные соображения высшего порядка, а также современная методология разработки
+                    играет
+                    важную роль в формировании глубокомысленных рассуждений.
+                  </p>
+                  <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-right"><span
+                      class="link-text">Подробнее</span></a>
+                </div>
+              </div>
+              <div class="swiper-slide card-slide card-slide-bottom">
+                <div class="card">
+                  <img class="image-fixed-ev" src="/img/1920/event-4.jpg" alt="">
+                  <div class="card__description">
+                    <span class="card__description__place4">Третьяковка на Крымском
+                      валу</span><br><span class="card__description__date">с 30 марта по 30
+                      апреля</span>
+                  </div>
+                  <h3 class="card__heading">
+                    XXIV Международная биеннале молодого искусства
+                  </h3>
+                  <p class="card__paragraph">
+                    Внезапно, реплицированные с зарубежных источников, современные исследования.
+                  </p>
+                  <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-bottom"><span
+                      class="link-text">Подробнее</span></a>
+                </div>
+              </div>
+              <div class="swiper-slide card-slide card-slide-bottom">
+                <div class="card">
+                  <img class="image-fixed-ev" src="/img/1920/event-5.jpg" alt="">
+                  <div class="card__description">
+                    <span class="card__description__place5">ММАМ</span><br><span class="card__description__date">с 8
+                      апреля по 20 мая</span>
+                  </div>
+                  <h3 class="card__heading">
+                    Джон Винзор. Фотографии из серии «Метафора серебра»
+                  </h3>
+                  <p class="card__paragraph">
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                    династии,
+                    которую продолжили его брат Давид и сын Ридольфо.
+                  </p>
+                  <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-end"><span
+                      class="link-text">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-events"></div>
+          </div>
+        </div>
+        <div class="events-btn">
+          <button class="events__button">Все события</button>
+        </div>
+      </div>
+    </section>
+    <section id="editions" class="editions">
+      <div class="container editions__container">
+        <div class="editions-left">
+          <h2 class="editions-left__heading">
+            Издания
+          </h2>
+          <h3 class="checkbox-heading">Категории</h3>
+          <div class="editions-left__checkbox">
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Бестселлеры</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Искусство</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Архитектура</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox" checked>
+              <span tabindex="0" class="checkbox-category-item active-checkbox">Дизаин</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Мода</span>
+            </label>
+            <label class="custom-checkbox fix">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Детям</span>
+            </label>
+            <label class="custom-checkbox fixe fix">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Художественная литература</span>
+            </label>
+            <label class="custom-checkbox fix">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Публицистика</span>
+            </label>
+            <label class="custom-checkbox fix">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Путиводители</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Философия</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Учебная литература</span>
+            </label>
+            <label class="custom-checkbox">
+              <input tabindex="-1" class="input-checkbox" type="checkbox">
+              <span tabindex="0" class="checkbox-category-item">Журналы и газеты</span>
+            </label>
+          </div>
+          <div class="editions-left__product"></div>
+          <div class="editions-left__price">
+            <h3 class="price-heading">Цена</h3>
+            <form class="price-filter">
+              <label class="price-filter__text1">От <input class="price-filter__input" placeholder="50"></label>
+              <label class="price-filter__text2">до<input class="price-filter__input" placeholder="25 000"></label>
+              <span class="price-filter__text3">руб.</span>
+            </form>
+          </div>
+        </div>
+        <div class="editions-right">
+          <div class="editions-right__slider-nav">
+            <button class="swiper-button-prev edit-prev"></button>
+            <div class="edit"></div>
+            <button class="swiper-button-next edit-next"></button>
+          </div>
+          <div class="swiper-container editions-slider">
+            <div class="swiper-wrapper editions-wrapper">
+              <div class="swiper-slide edition-slide">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-1.jpg" alt="">
+                  <h3 class="product-card__heading">Искусства цвета</h3>
+                  <span class="product-card__price price1"><em>620 руб</em></span>
+                  <p class="product-card__description">Иттен, Иоханнес </p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-2.jpg" alt="">
+                  <h3 class="product-card__heading">
+                    Типографика
+                  </h3>
+                  <span class="product-card__price"><em>2 450 руб</em></span>
+                  <p class="product-card__description">Рудер, Эмиль</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide noSlide-320">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-3.jpg" alt="">
+                  <h3 class="product-card__heading">Книга про буквы</h3>
+                  <span class="product-card__price"><em>2 450 руб</em></span>
+                  <p class="product-card__description">Гордон, Юрий</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide noSlide-320">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-4.jpg" alt="">
+                  <h3 class="product-card__heading">Николай Ильин</h3>
+                  <span class="product-card__price"><em>1 100 руб</em></span>
+                  <p class="product-card__description">Кричевский, Владимир</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide noSlide-320">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-5.jpg" alt="">
+                  <h3 class="product-card__heading heading-320-fix">Модульные сетки в граф...</h3>
+                  <span class="product-card__price"><em>1 450 руб</em></span>
+                  <p class="product-card__description">Мюллер-Брокманн, Йозеф</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide noSlide-320">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-6.jpg" alt="">
+                  <h3 class="product-card__heading heading-320-fix">Эволюция графических ст...</h3>
+                  <span class="product-card__price end"><em>3 200 руб</em></span>
+                  <p class="product-card__description">Хеллер, Чваст</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide edition-slide noSlide-320">
+                <div class="product-card">
+                  <img class="product-slider-image" src="/img/1920/book-7.jpg" alt="">
+                  <h3 class="product-card__heading heading-320-fix">Искусство и визуальное в...</h3>
+                  <span class="product-card__price end">2 200 руб</span>
+                  <p class="product-card__description">Арнхейм, Рудольф</p>
+                  <button class="product-card__button">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="project">
+      <div class="container project__container">
+        <h2 class="project__heading">Проекты</h2>
+        <p class="project__paragraph">Предварительные выводы: постоянное информационно-пропагандистское
+          обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения
+          сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной
+          неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
+          информационно-пропагандистское
+          <button class="project__tooltip js-tooltip"
+            data-tippy-content="Пример современных тенденций - современная методология разработки">i
+          </button>
+          обеспечение нашей
+          деятельности однозначно фиксирует необходимость
+          экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
+          оппозиции могут быть рассмотрены
+          <button class="project__tooltip js-tooltip"
+            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
+            i
+          </button>
+          исключительно
+          в разрезе маркетинговых и финансовых
+          <button class="project__tooltip js-tooltip" data-tippy-content="В стремлении повысить качество">i
+          </button>
+          предпосылок.
+          Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают
+          нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до
+          степени совершенной неузнаваемости. Подробнее: <a class="project__link project__link-dark" href=""><span
+              class="link-text">blanchard-art.ru/projects/about</span></a>
+        </p>
+        <h3 class="project__partners-heading">Партнёры проектов:</h3>
+        <div class="project__card-partners project__card-partners__slider">
+          <button class="swiper-button-prev project-prev nav-btn-all" aria-label="предъидущий слаид"></button>
+          <div class="swiper-container swiper-project">
+            <div class="swiper-wrapper">
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/freelands.png" alt="freelands">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/institute.png" alt="institute">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/workhouse.png" alt="workhouse">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image fix-card" src="img/1920/1849.png" alt="s1849">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/hiscox.png" alt="hiscox">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/camden.png" alt="camden">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/stassen.png" alt="stassen">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/watts.png" alt="watts">
+              </a>
+              <a href="#" class="swiper-slide swiper-slide-partners card-partners">
+                <img class="card-partners__image" src="img/1920/esad.png" alt="esad">
+              </a>
+            </div>
+          </div>
+          <button class="swiper-button-next project-next nav-btn-all" aria-label="следующий слаид"></button>
+
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__heading">Контакты</h2>
+        <address class="contacts__address-320">
+          <span class="contacts__address-heading">Шоурум №2</span><br>
+          Леонтьевский переулок, дом 5/1
+        </address>
+        <div class="contacts-address-map">
+          <div class="contacts-left">
+            <address class="contacts__address">
+              <span class="contacts__address-heading">Шоурум №4</span><br>
+              Леонтьевский переулок, дом 5/1
+            </address>
+            <form class="contacts__reverse-form form" action="https://jsonplaceholder.typicode.com/posts"
+              autocomplete="on" method="POST">
+              <h3 class="form__heading">Заказать обратный звонок</h3>
+              <label class="form-label">
+                <input type="text" name="name" aria-label="введите ваше имя" placeholder="Имя*" value=""
+                  class="form-item form__input" data-validate-field="name">
+              </label>
+              <label class="form-label">
+                <input type="tel" name="phone" aria-label="введите ваш телефон" placeholder="Телефон*" value=""
+                  class="form-item form__input" data-validate-field="tel">
+              </label>
+              <button type="submit" class="form__button">Заказать</button>
+            </form>
+            <p class="contacts__description">Связаться в один клик</p>
+            <ul class="contacts__messenger-link">
+              <li><a class="whatsapp" aria-label="написать в whatsapp" href=""></a></li>
+              <li> <a class="telegram" aria-label="написать в telegram" href=""></a></li>
+            </ul>
+          </div>
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer__logo"><a class="footer__logo-link"></a></div>
+      <ul class="footer__social-link">
+        <li><a class="social-link vk" aria-label="vkontakte" href=""></a></li>
+         <li><a class="social-link inst" aria-label="instagram" href=""></a></li>
+         <li><a class="social-link fb" aria-label="facebook" href=""></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
