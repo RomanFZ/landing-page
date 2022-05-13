@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                spaceBetween: 30,
+                spaceBetween: 15,
                 grid: {
                     rows: 2,
                 },
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function () {
             1024: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                spaceBetween: 17,
+                spaceBetween: 20,
                 grid: {
                     rows: 2,
                 },

@@ -5,7 +5,7 @@
 
     // breakpoint where swiper will be destroyed
     // and switches to a dual-column layout
-    const breakpoint = window.matchMedia('(max-width:450px)');
+    const breakpoint = window.matchMedia('(max-width:449px)');
 
     // keep track of swiper instances to destroy later
     let swiperEdit;
@@ -51,11 +51,12 @@
                 768: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
+                    spaceBetween: 15,
                 },
                 1024: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
-                    spaceBetween: 19,
+                    spaceBetween: 28,
                 },
                 1600: {
                     slidesPerView: 3,

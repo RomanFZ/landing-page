@@ -48,14 +48,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     setMenuListener();
 
-    //Checkbox custom
-
-    document.querySelectorAll('.checkbox-category-item').forEach(function (checkbox) {
-        checkbox.addEventListener('click', function () {
-            checkbox.classList.toggle('active-checkbox');
-        });
-    });
-
     // Events button
 
     let eventBtn = document.querySelector('.events__button');
@@ -177,8 +169,10 @@ window.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.input-checkbox').forEach(function (val) {
             if (val.checked) {
                 val.closest('.custom-checkbox').classList.add('custom-checkbox-show');
+                val.closest('.custom-checkbox').classList.add('active-checkbox');
             } else {
                 val.closest('.custom-checkbox').classList.remove('custom-checkbox-show');
+                val.closest('.custom-checkbox').classList.remove('active-checkbox');
             }
         })
     }
