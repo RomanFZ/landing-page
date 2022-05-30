@@ -110,56 +110,62 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Search Form
 
-    const searchButton = document.querySelector('.search-form__btn');
-    const logoHide = document.querySelector('.header-top__logo-link');
-    const closeBtn = document.querySelector('.search-form__btn-close')
+    const searchOpenBtn = document.querySelector('.js-open-search');
+    const searchCloseBtn = document.querySelector('.search-form__btn-close')
 
-    searchButton.addEventListener('click', function (event) {
+    searchOpenBtn.addEventListener('click', function (event) {
         event.preventDefault()
-        document.querySelector('.search-form__input').classList.add('nav-show')
-        document.querySelector('.search-form__btn-close').classList.add('search-form__btn-close_show')
+        document.querySelector('.js-form').classList.add('search-form-show');
+        document.querySelector('.js-open-search').classList.add('hide-search');
     })
 
-    closeBtn.addEventListener('click', function (event) {
+    searchCloseBtn.addEventListener('click', function (event) {
         event.preventDefault()
-        document.querySelector('.search-form__input').classList.toggle('nav-show')
-        document.querySelector('.search-form__btn-close').classList.remove('search-form__btn-close_show')
+        document.querySelector('.js-form').classList.toggle('search-form-show')
+        document.querySelector('.js-open-search').classList.remove('hide-search');
     })
 
-    const screenWidth = window.screen.width
+    const onChangeSearchForm = () => {
 
-    if (screenWidth <= 1023) {
+        const screenWidth = screen.width;
 
-        searchButton.addEventListener('click', function (event) {
-            event.preventDefault()
-            document.querySelector('.header-top__logo-link').classList.add('hide-show')
-            document.querySelector('.search-form').classList.add('search-form__show')
-            document.querySelector('.burger-menu').classList.add('hide-show')
-            document.querySelector('.search-form__input').classList.add('search-form__input-show')
-            document.querySelector('.header-top').classList.add('header-top_320-show')
-        })
-        closeBtn.addEventListener('click', function (event) {
-            event.preventDefault()
-            document.querySelector('.header-top__logo-link').classList.remove('hide-show')
-            document.querySelector('.search-form').classList.remove('search-form__show')
-            document.querySelector('.burger-menu').classList.remove('hide-show')
-            document.querySelector('.search-form__input').classList.remove('search-form__input-show')
-        })
+        if (screenWidth <= 1023) {
+
+            searchOpenBtn.addEventListener('click', function (event) {
+                event.preventDefault()
+                document.querySelector('.header-top__logo-link').classList.add('hide-search')
+                document.querySelector('.search-form').classList.add('search-form__show')
+                document.querySelector('.burger-menu').classList.add('hide-search')
+                document.querySelector('.search-form__input').classList.add('search-form__input-show')
+                document.querySelector('.header-top').classList.add('header-top_320-show')
+            })
+            searchCloseBtn.addEventListener('click', function (event) {
+                event.preventDefault()
+                document.querySelector('.header-top__logo-link').classList.remove('hide-search')
+                document.querySelector('.search-form').classList.remove('search-form__show')
+                document.querySelector('.burger-menu').classList.remove('hide-search')
+                document.querySelector('.search-form__input').classList.remove('search-form__input-show')
+            })
+        }
+
+        if (screenWidth <= 449) {
+
+            searchOpenBtn.addEventListener('click', function (event) {
+                event.preventDefault()
+                document.querySelector('.header-top').classList.add('header-top_320-show')
+                document.querySelector('.header-top-container').classList.add('header-top-container_show')
+            })
+            searchCloseBtn.addEventListener('click', function (event) {
+                event.preventDefault()
+                document.querySelector('.header-top').classList.remove('header-top_320-show')
+                document.querySelector('.header-top-container').classList.remove('header-top-container_show')
+            })
+        }
     }
 
-    if (screenWidth <= 449) {
+    onChangeSearchForm();
+   window.addEventListener('resize', onChangeSearchForm)
 
-        searchButton.addEventListener('click', function (event) {
-            event.preventDefault()
-            document.querySelector('.header-top').classList.add('header-top_320-show')
-            document.querySelector('.header-top-container').classList.add('header-top-container_show')
-        })
-        closeBtn.addEventListener('click', function (event) {
-            event.preventDefault()
-            document.querySelector('.header-top').classList.remove('header-top_320-show')
-            document.querySelector('.header-top-container').classList.remove('header-top-container_show')
-        })
-    }
 
     // tabs Editions
 

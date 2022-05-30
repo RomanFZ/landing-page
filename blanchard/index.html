@@ -44,7 +44,12 @@
         <div class="header-top-container">
           <div class="header-top container">
             <button class="burger-menu"></button>
-            <a class="header-top__logo-link"><img src="img/1920/logo.svg" class="logo-link" alt="логотип"></a>
+            <a class="header-top__logo-link">
+              <picture>
+                <source srcset="/img/1024/logo1024.svg" media="(max-width: 1177px) and (min-width: 1023px)">
+                <img src="img/1920/logo.svg" class="logo-link" alt="логотип">
+              </picture>
+            </a>
             <div class="nav">
               <ul class="nav__list">
                 <li class="nav__item"><a class="nav__item-link js-scroll-link" href="#about-us"><span
@@ -74,10 +79,20 @@
                 </span>
               </a>
             </div>
+            <div class="js-open-search search-form__btn btn-search-link button-open-search">
+              <svg class="link-text" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695"
+                      transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                      fill="currentColor" />
+              </svg>
+            </div>
             <form action="/" class="search-form js-form">
-              <div class="js-close search-form__btn-close"></div>
+              <button class="js-close search-form__btn-close"></button>
                 <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-              <button class="js-open-search search-form__btn btn-search-link">
+              <button class="search-form__btn btn-search-link">
                 <svg class="link-text" width="23" height="22" viewBox="0 0 23 22" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695"
@@ -267,21 +282,24 @@
       <div class="container gallery-container">
         <div class="gallery-left">
           <h2 class="gallery-left__heading">Галерея</h2>
-          <div class="gallery-left__select">
-            <div class="gallery-left__select-title">Фильтр:</div>
-            <label for="select"></label><select id="select">
-              <option selected>Живопись</option>
-              <option>Рисунок</option>
-              <option>Скульптура</option>
-            </select>
+          <div class="gallery-left__select-paragraph">
+            <div>
+              <div class="gallery-left__select-title">Фильтр:</div>
+              <label for="select"></label>
+              <select id="select">
+                <option selected>Живопись</option>
+                <option>Рисунок</option>
+                <option>Скульптура</option>
+              </select>
+            </div>
+            <p class="gallery-paragraph">
+              Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+              <a class="gallery-paragraph-link" href="#"><span
+                      class="gallery-paragraph-link__text">авторизуйтесь</span></a>,
+              либо воспользуйтесь
+              лицензией.
+            </p>
           </div>
-          <p class="gallery-paragraph">
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-            <a class="gallery-paragraph-link" href="#"><span
-                class="gallery-paragraph-link__text">авторизуйтесь</span></a>,
-            либо воспользуйтесь
-            лицензией.
-          </p>
         </div>
         <div class="gallery-right">
           <div class="gallery-right__slider-nav">
@@ -294,168 +312,288 @@
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide1">
-                    <img class="link-slide-size" src="img/1920/gallery-image1.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide1-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide1-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide1-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image1.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide2">
-                    <img class="link-slide-size" src="img/1920/gallery-image2.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide2-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide2-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide2-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image2.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide3">
-                    <img class="link-slide-size" src="img/1920/gallery-image3.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide3-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide3-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide3-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image3.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide4">
-                    <img class="link-slide-size" src="img/1920/gallery-image4.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide4-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide4-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide4-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image4.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide5">
-                    <img class="link-slide-size" src="img/1920/gallery-image5.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide5-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide5-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide5-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image5.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide6">
-                    <img class="link-slide-size" src="img/1920/gallery-image6.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide6-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide6-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide6-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image6.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide7">
-                    <img class="link-slide-size" src="img/1920/gallery-image7.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide7-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide7-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide7-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image7.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide8">
-                    <img class="link-slide-size" src="img/1920/gallery-image8.jpg" alt="картина">
-                  </a>
+                    <picture>
+                      <source srcset="/img/1024/slide8-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide8-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide8-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image8.jpg" alt="картина">
+                    </picture>
+                  </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide9">
-                    <img class="link-slide-size" src="img/1920/gallery-image9.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide9-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide9-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide9-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image9.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide10">
-                    <img class="link-slide-size" src="img/1920/gallery-image10.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide10-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide10-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide10-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image10.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide11">
-                    <img class="link-slide-size" src="img/1920/gallery-image11.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide11-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide11-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide11-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image11.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide12">
-                    <img class="link-slide-size" src="img/1920/gallery-image12.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide12-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide12-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide12-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image12.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide13">
-                    <img class="link-slide-size" src="img/1920/gallery-image13.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide13-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide13-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide13-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image13.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide14">
-                    <img class="link-slide-size" src="img/1920/gallery-image14.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide14-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide14-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide14-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image14.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide15">
-                    <img class="link-slide-size" src="img/1920/gallery-image15.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide15-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide15-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide15-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image15.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide16">
-                    <img class="link-slide-size" src="img/1920/gallery-image16.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide16-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide16-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide16-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image16.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide17">
-                    <img class="link-slide-size" src="img/1920/gallery-image17.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide17-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide17-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide17-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image17.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide18">
-                    <img class="link-slide-size" src="img/1920/gallery-image18.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide18-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide18-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide18-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image18.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide19">
-                    <img class="link-slide-size" src="img/1920/gallery-image19.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide19-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide19-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide19-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image19.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide20">
-                    <img class="link-slide-size" src="img/1920/gallery-image20.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide20-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide20-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide20-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image20.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide21">
-                    <img class="link-slide-size" src="img/1920/gallery-image21.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide21-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide21-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide21-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image21.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide22">
-                    <img class="link-slide-size" src="img/1920/gallery-image22.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide22-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide22-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide22-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image22.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide23">
-                    <img class="link-slide-size" src="img/1920/gallery-image23.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide23-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide23-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide23-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image23.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
               <div class="swiper-slide slide-gall">
                 <div class="gallery-slider__list-item fixed">
                   <button class="link-slide" data-path="slide24">
-                    <img class="link-slide-size" src="img/1920/gallery-image24.jpg" alt="картина">
+                    <picture>
+                      <source srcset="/img/1024/slide24-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                      <source srcset="/img/768/slide24-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                      <source srcset="/img/320/slide24-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                      <img class="link-slide-size" src="img/1920/gallery-image24.jpg" alt="картина">
+                    </picture>
                   </button>
                 </div>
               </div>
@@ -469,8 +607,6 @@
           лицензией.
         </div>
       </div>
-
-
       <div class="modals">
         <div class="modal-overlay">
           <div class="modal" data-target="slide1">
@@ -479,7 +615,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -489,7 +625,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -499,7 +635,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -509,7 +645,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -519,7 +655,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -529,7 +665,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -539,7 +675,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -549,7 +685,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -559,7 +695,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -569,7 +705,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -579,7 +715,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -589,7 +725,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -599,7 +735,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -609,7 +745,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -619,7 +755,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -629,7 +765,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -639,7 +775,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -649,7 +785,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -659,7 +795,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -669,7 +805,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -679,7 +815,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -689,7 +825,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -699,7 +835,7 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
@@ -709,13 +845,12 @@
              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
-              <span class=description-date>Годы написания пример 1931-1932г.</span>
+              <div class=description-date>Годы написания пример 1931-1932г.</div>
               <p class="description-text">Описание например : Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
           </div>
         </div>
       </div>
-
     </section>
     <section id="catalog" class="catalog">
       <div class="container catalog-container">
@@ -827,6 +962,7 @@
               <div id="accordion-italy">
                 <h3 class="accordion-heading"><span class="accordion-heading-focus">С 1400 по 1499
                     гг.</span></h3>
+                <div>
                   <ul class="accordion-list">
                     <li class="accordion-list__item">
                       <button class="accordion-list__item-btn" data-path="unknown">Бенедетто ди
@@ -940,8 +1076,9 @@
                       </button>
                     </li>
                   </ul>
+                </div>
                 <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -953,7 +1090,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -965,7 +1102,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -977,7 +1114,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -989,7 +1126,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1001,7 +1138,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 2000 г.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1050,6 +1187,7 @@
             <div class="catalog-right__accordeon">
               <div id="accordion-russia">
                 <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
                   <ul class="accordion-list">
                     <li class="accordion-list__item">
                       <button class="accordion-list__item-btn-rus" data-path="unknown1">Дионисий
@@ -1065,8 +1203,9 @@
                       </button>
                     </li>
                   </ul>
+                </div>
                 <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1078,7 +1217,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1090,7 +1229,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1102,7 +1241,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1114,7 +1253,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1126,7 +1265,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 2000 г.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1183,6 +1322,7 @@
             <div class="catalog-right__accordeon">
               <div id="accordion-france">
                 <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
                   <ul class="accordion-list">
                     <li class="accordion-list__item">
                       <button class="accordion-list__item-btn-fra" data-path="unknown2">Робер
@@ -1200,8 +1340,9 @@
                       </button>
                     </li>
                   </ul>
+                </div>
                 <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1213,7 +1354,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1225,7 +1366,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1237,7 +1378,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1249,7 +1390,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1261,7 +1402,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 2000 г.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1306,6 +1447,7 @@
             <div class="catalog-right__accordeon">
               <div id="accordion-germany">
                 <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
                   <ul class="accordion-list">
                     <li class="accordion-list__item">
                       <button class="accordion-list__item-btn-ger active-btn" data-path="martin">Мартин Шонгауэр
@@ -1321,8 +1463,9 @@
                       </button>
                     </li>
                   </ul>
+                </div>
                 <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1334,7 +1477,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1346,7 +1489,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1358,7 +1501,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1370,7 +1513,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1382,7 +1525,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 2000 г.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1427,6 +1570,7 @@
             <div class="catalog-right__accordeon">
               <div id="accordion-belgium">
                 <h3 class="accordion-heading">C 1400 по 1499 гг.</h3>
+                <div>
                   <ul class="accordion-list">
                     <li class="accordion-list__item">
                       <button class="accordion-list__item-btn-bel" data-path="unknown4">Альбрехт
@@ -1443,8 +1587,9 @@
                       </button>
                     </li>
                   </ul>
+                </div>
                 <h3 class="accordion-heading">C 1500 по 1599 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1456,7 +1601,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1600 по 1699 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1468,7 +1613,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading align">C 1700 по 1799 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1480,7 +1625,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1800 по 1899 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1492,7 +1637,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 1900 по 1999 гг.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1504,7 +1649,7 @@
                   </div>
                 </div>
                 <h3 class="accordion-heading">C 2000 г.</h3>
-                <div class="accordion-description">
+                <div class="accordion-description fixed-empty">
                   <div class="accordion-description__icon">
                     <img class="description-icon" src="/img/1920/empty-autor.svg" alt="">
                   </div>
@@ -1553,7 +1698,7 @@
                   <img class="image-fixed-ev" src="/img/1920/event-2.jpg" alt="">
                   <div class="card__content">
                     <p class="card__description">
-                      <span class="card__description-place2">ММОМА</span><br><span class="card__description-date2">24
+                      <span class="card__description-place">ММОМА</span><br><span class="card__description-date">24
                       марта 19:00</span>
                     </p>
                     <h3 class="card__heading">
@@ -1564,7 +1709,7 @@
                       доказательством
                       простого факта.
                     </p>
-                    <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-center"><span
+                    <a tabindex="0" class="card-link card-link-text card-link-text-dark"><span
                             class="link-text">Подробнее</span></a>
                   </div>
                 </div>
@@ -1574,7 +1719,7 @@
                   <img class="image-fixed-ev" src="/img/1920/event-3.jpg" alt="">
                   <div class="card__content">
                     <p class="card__description">
-                      <span class="card__description-place3">Еврейский музей</span><br><span
+                      <span class="card__description-place">Еврейский музей</span><br><span
                             class="card__description-date">с 31 марта по 21 апреля</span>
                     </p>
                     <h3 class="card__heading">
@@ -1585,7 +1730,7 @@
                       играет
                       важную роль в формировании глубокомысленных рассуждений.
                     </p>
-                    <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-right"><span
+                    <a tabindex="0" class="card-link card-link-text card-link-text-dark"><span
                             class="link-text">Подробнее</span></a>
                   </div>
                 </div>
@@ -1593,9 +1738,9 @@
               <div class="swiper-slide card-slide card-slide-bottom">
                 <div class="card">
                   <img class="image-fixed-ev" src="/img/1920/event-4.jpg" alt="">
-                  <div class="card__content">
+                  <div class="card__content content-fixed">
                     <p class="card__description">
-                    <span class="card__description-place4">Третьяковка на Крымском
+                      <span class="card__description-place">Третьяковка на Крымском
                       валу</span><br><span class="card__description-date">с 30 марта по 30
                       апреля</span>
                     </p>
@@ -1605,7 +1750,7 @@
                     <p class="card__paragraph">
                       Внезапно, реплицированные с зарубежных источников, современные исследования.
                     </p>
-                    <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-bottom"><span
+                    <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-fixed"><span
                             class="link-text">Подробнее</span></a>
                   </div>
                 </div>
@@ -1615,7 +1760,7 @@
                   <img class="image-fixed-ev" src="/img/1920/event-5.jpg" alt="">
                   <div class="card__content">
                     <p class="card__description">
-                      <span class="card__description-place5">ММАМ</span><br><span class="card__description-date">с 8
+                      <span class="card__description-place">ММАМ</span><br><span class="card__description-date">с 8
                       апреля по 20 мая</span>
                     </p>
                     <h3 class="card__heading">
@@ -1626,7 +1771,7 @@
                       династии,
                       которую продолжили его брат Давид и сын Ридольфо.
                     </p>
-                    <a tabindex="0" class="card-link card-link-text card-link-text-dark card-link-end"><span
+                    <a tabindex="0" class="card-link card-link-text card-link-text-dark"><span
                             class="link-text">Подробнее</span></a>
                   </div>
                 </div>
@@ -1867,37 +2012,41 @@
     </section>
     <section id="contacts" class="contacts">
       <div class="container contacts__container">
-        <h2 class="contacts__heading">Контакты</h2>
-        <address class="contacts__address-320">
-          <span class="contacts__address-heading">Шоурум №2</span><br>
-          Леонтьевский переулок, дом 5/1
-        </address>
-        <div class="contacts-address-map">
-          <div class="contacts-left">
-            <address class="contacts__address">
-              <span class="contacts__address-heading">Шоурум №4</span><br>
-              Леонтьевский переулок, дом 5/1
-            </address>
-            <form class="contacts__reverse-form form" action="https://jsonplaceholder.typicode.com/posts"
-              autocomplete="on" method="POST">
-              <h3 class="form__heading">Заказать обратный звонок</h3>
-              <label class="form-label">
-                <input type="text" name="name" aria-label="введите ваше имя" placeholder="Имя*" value=""
-                  class="form-item form__input" data-validate-field="name">
-              </label>
-              <label class="form-label">
-                <input type="tel" name="phone" aria-label="введите ваш телефон" placeholder="Телефон*" value=""
-                  class="form-item form__input" data-validate-field="tel">
-              </label>
-              <button type="submit" class="form__button">Заказать</button>
-            </form>
-            <p class="contacts__description">Связаться в один клик</p>
-            <ul class="contacts__messenger-link">
-              <li class="messenger-link-whatsapp"><a class="whatsapp" aria-label="написать в whatsapp" href="#"></a></li>
-              <li class="messenger-link-telegram"> <a class="telegram" aria-label="написать в telegram" href="#"></a></li>
-            </ul>
+        <div class="container">
+          <h2 class="contacts__heading">Контакты</h2>
+        </div>
+        <div>
+          <address class="contacts__address-320">
+            <span class="contacts__address-heading">Шоурум №2</span><br>
+            Леонтьевский переулок, дом 5/1
+          </address>
+          <div class="contacts-address-map">
+            <div class="contacts-left">
+              <address class="contacts__address">
+                <span class="contacts__address-heading">Шоурум №4</span><br>
+                Леонтьевский переулок, дом 5/1
+              </address>
+              <form class="contacts__reverse-form form" action="https://jsonplaceholder.typicode.com/posts"
+                    autocomplete="on" method="POST">
+                <h3 class="form__heading">Заказать обратный звонок</h3>
+                <label class="form-label">
+                  <input type="text" name="name" aria-label="введите ваше имя" placeholder="Имя*" value=""
+                         class="form-item form__input" data-validate-field="name">
+                </label>
+                <label class="form-label">
+                  <input type="tel" name="phone" aria-label="введите ваш телефон" placeholder="Телефон*" value=""
+                         class="form-item form__input" data-validate-field="tel">
+                </label>
+                <button type="submit" class="form__button">Заказать</button>
+              </form>
+              <p class="contacts__description">Связаться в один клик</p>
+              <ul class="contacts__messenger-link">
+                <li class="messenger-link-whatsapp"><a class="whatsapp" aria-label="написать в whatsapp" href="#"></a></li>
+                <li class="messenger-link-telegram"> <a class="telegram" aria-label="написать в telegram" href="#"></a></li>
+              </ul>
+            </div>
+            <div id="map" class="map"></div>
           </div>
-          <div id="map" class="map"></div>
         </div>
       </div>
     </section>
