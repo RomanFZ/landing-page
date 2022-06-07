@@ -25,6 +25,7 @@
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/swiperEditions.js"></script>
   <script defer src="./js/swiperEvents.js"></script>
+  <script defer src="./js/swiperGallery.js"></script>
   <script defer src="./js/simplebar.min.js"></script>
   <script defer src="./js/tooltip.js"></script>
   <script defer src="./js/tabs.js"></script>
@@ -304,299 +305,203 @@
         <div class="gallery-right">
           <div class="gallery-right__slider-nav">
             <button class="swiper-button-prev gall-prev" aria-label="кнопка слаидер назад"></button>
-            <div class="swiper-pagination gall"></div>
+            <div class="swiper-pagination gall-pagination"></div>
             <button class="swiper-button-next gall-next" aria-label="кнопка слаидер вперед"></button>
           </div>
           <div class="swiper-container gallery-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide1">
-                    <picture>
-                      <source srcset="/img/1024/slide1-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide1-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide1-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image1.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide2">
-                    <picture>
-                      <source srcset="/img/1024/slide2-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide2-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide2-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image2.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide3">
-                    <picture>
-                      <source srcset="/img/1024/slide3-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide3-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide3-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image3.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide4">
-                    <picture>
-                      <source srcset="/img/1024/slide4-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide4-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide4-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image4.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide5">
-                    <picture>
-                      <source srcset="/img/1024/slide5-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide5-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide5-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image5.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide6">
-                    <picture>
-                      <source srcset="/img/1024/slide6-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide6-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide6-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image6.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide7">
-                    <picture>
-                      <source srcset="/img/1024/slide7-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide7-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide7-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image7.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide8">
-                    <picture>
-                      <source srcset="/img/1024/slide8-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide8-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide8-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image8.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide9">
-                    <picture>
-                      <source srcset="/img/1024/slide9-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide9-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide9-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image9.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide10">
-                    <picture>
-                      <source srcset="/img/1024/slide10-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide10-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide10-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image10.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide11">
-                    <picture>
-                      <source srcset="/img/1024/slide11-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide11-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide11-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image11.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide12">
-                    <picture>
-                      <source srcset="/img/1024/slide12-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide12-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide12-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image12.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide13">
-                    <picture>
-                      <source srcset="/img/1024/slide13-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide13-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide13-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image13.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide14">
-                    <picture>
-                      <source srcset="/img/1024/slide14-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide14-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide14-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image14.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide15">
-                    <picture>
-                      <source srcset="/img/1024/slide15-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide15-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide15-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image15.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide16">
-                    <picture>
-                      <source srcset="/img/1024/slide16-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide16-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide16-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image16.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide17">
-                    <picture>
-                      <source srcset="/img/1024/slide17-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide17-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide17-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image17.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide18">
-                    <picture>
-                      <source srcset="/img/1024/slide18-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide18-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide18-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image18.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide19">
-                    <picture>
-                      <source srcset="/img/1024/slide19-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide19-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide19-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image19.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide20">
-                    <picture>
-                      <source srcset="/img/1024/slide20-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide20-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide20-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image20.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide21">
-                    <picture>
-                      <source srcset="/img/1024/slide21-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide21-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide21-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image21.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide22">
-                    <picture>
-                      <source srcset="/img/1024/slide22-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide22-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide22-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image22.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide23">
-                    <picture>
-                      <source srcset="/img/1024/slide23-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide23-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide23-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image23.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide slide-gall">
-                <div class="gallery-slider__list-item fixed">
-                  <button class="link-slide" data-path="slide24">
-                    <picture>
-                      <source srcset="/img/1024/slide24-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
-                      <source srcset="/img/768/slide24-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
-                      <source srcset="/img/320/slide24-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
-                      <img class="link-slide-size" src="img/1920/gallery-image24.jpg" alt="картина">
-                    </picture>
-                  </button>
-                </div>
-              </div>
+              <a class="swiper-slide link-slide" data-path="slide1">
+                  <picture>
+                    <source srcset="/img/1024/slide1-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide1-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide1-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image1.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide2">
+                  <picture>
+                    <source srcset="/img/1024/slide2-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide2-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide2-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image2.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide3">
+                  <picture>
+                    <source srcset="/img/1024/slide3-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide3-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide3-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image3.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide4">
+                  <picture>
+                    <source srcset="/img/1024/slide4-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide4-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide4-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image4.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide5">
+                  <picture>
+                    <source srcset="/img/1024/slide5-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide5-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide5-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image5.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide6">
+                  <picture>
+                    <source srcset="/img/1024/slide6-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                    <source srcset="/img/768/slide6-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                    <source srcset="/img/320/slide6-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                    <img class="link-slide-image" src="img/1920/gallery-image6.jpg" alt="картина">
+                  </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide7">
+                <picture>
+                  <source srcset="/img/1024/slide7-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide7-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide7-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image7.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide8">
+                <picture>
+                  <source srcset="/img/1024/slide8-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide8-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide8-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image8.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide9">
+                <picture>
+                  <source srcset="/img/1024/slide9-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide9-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide9-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image9.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide10">
+                <picture>
+                  <source srcset="/img/1024/slide10-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide10-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide10-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image10.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide11">
+                <picture>
+                  <source srcset="/img/1024/slide11-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide11-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide11-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image11.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide12">
+                <picture>
+                  <source srcset="/img/1024/slide12-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide12-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide12-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image12.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide13">
+                <picture>
+                  <source srcset="/img/1024/slide13-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide13-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide13-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image13.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide14">
+                <picture>
+                  <source srcset="/img/1024/slide14-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide14-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide14-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image14.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide15">
+                <picture>
+                  <source srcset="/img/1024/slide15-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide15-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide15-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image15.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide16">
+                <picture>
+                  <source srcset="/img/1024/slide16-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide16-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide16-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image16.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide17">
+                <picture>
+                  <source srcset="/img/1024/slide17-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide17-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide17-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image17.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide18">
+                <picture>
+                  <source srcset="/img/1024/slide18-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide18-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide18-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image18.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide19">
+                <picture>
+                  <source srcset="/img/1024/slide19-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide19-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide19-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image19.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide20">
+                <picture>
+                  <source srcset="/img/1024/slide20-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide20-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide20-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image20.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide21">
+                <picture>
+                  <source srcset="/img/1024/slide21-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide21-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide21-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image21.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide22">
+                <picture>
+                  <source srcset="/img/1024/slide22-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide22-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide22-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image22.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide23">
+                <picture>
+                  <source srcset="/img/1024/slide23-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide23-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide23-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image23.jpg" alt="картина">
+                </picture>
+              </a>
+              <a class="swiper-slide link-slide" data-path="slide24" >
+                <picture>
+                  <source srcset="/img/1024/slide24-1024.jpg" media="(max-width: 1177px) and (min-width: 769px)">
+                  <source srcset="/img/768/slide24-768.jpg" media="(max-width: 768px) and (min-width: 450px)">
+                  <source srcset="/img/320/slide24-320.jpg" media="(max-width: 449px) and (min-width: 320px)">
+                  <img class="link-slide-image" src="img/1920/gallery-image24.jpg" alt="картина">
+                </picture>
+              </a>
             </div>
           </div>
         </div>
@@ -672,7 +577,7 @@
           <div class="modal" data-target="slide7">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big7.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -680,9 +585,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide8">
-              <img class="modal__image-container size-image" src="/img/1920/gallery-image-big8.jpg" alt="Слаид">
+            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big8.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -692,7 +597,7 @@
           <div class="modal" data-target="slide9">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big9.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -700,9 +605,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide10">
-            <img class=" modal__image-container size-image" src="/img/1920/gallery-image-big10.jpg" alt="Слаид">
+            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big10.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -710,9 +615,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide11">
-            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big11.jpg" alt="Слаид">
-            <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+            <img class="size-image" src="/img/1920/gallery-image-big11.jpg" alt="Слаид">
+            <div class="modal__image-container modal__description-container">
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -722,7 +627,7 @@
           <div class="modal" data-target="slide12">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big12.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -732,7 +637,7 @@
           <div class="modal" data-target="slide13">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big13.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -742,7 +647,7 @@
           <div class="modal" data-target="slide14">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big14.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -752,7 +657,7 @@
           <div class="modal" data-target="slide15">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big15.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -762,7 +667,7 @@
           <div class="modal" data-target="slide16">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big16.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -770,9 +675,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide17">
-            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big17.jpg" alt="Слаид">
-            <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+            <img class="size-image" src="/img/1920/gallery-image-big17.jpg" alt="Слаид">
+            <div class="modal__image-container modal__description-container">
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -780,9 +685,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide18">
-             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big18.jpg" alt="Слаид">
+            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big18.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -792,7 +697,7 @@
           <div class="modal" data-target="slide19">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big19.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -802,7 +707,7 @@
           <div class="modal" data-target="slide20">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big20.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -812,7 +717,7 @@
           <div class="modal" data-target="slide21">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big21.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -822,7 +727,7 @@
           <div class="modal" data-target="slide22">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big22.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -830,9 +735,9 @@
             </div>
           </div>
           <div class="modal" data-target="slide23">
-            <img class="modal__image-container size-image" src="/img/1920/gallery-image-big23.jpg" alt="Слаид">
-            <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+            <img class="size-image" src="/img/1920/gallery-image-big23.jpg" alt="Слаид">
+            <div class="modal__image-container modal__description-container">
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -842,7 +747,7 @@
           <div class="modal" data-target="slide24">
             <img class="modal__image-container size-image" src="/img/1920/gallery-image-big24.jpg" alt="Слаид">
             <div class="modal__description-container">
-             <button class="close-modal-btn"></button>
+              <button class="close-modal-btn"></button>
               <h3 class=description-heading-author >Название художника</h3>
               <h4 class=description-heading-picture>Название картины</h4>
               <div class=description-date>Годы написания пример 1931-1932г.</div>
@@ -1878,7 +1783,7 @@
                   <h3 class="product-card__heading">Искусства цвета</h3>
                   <span class="product-card__price price1"><em>620 руб</em></span>
                   <p class="product-card__description">Иттен, Иоханнес </p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide">
@@ -1889,7 +1794,7 @@
                   </h3>
                   <span class="product-card__price"><em>2 450 руб</em></span>
                   <p class="product-card__description">Рудер, Эмиль</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide noSlide-320">
@@ -1898,7 +1803,7 @@
                   <h3 class="product-card__heading">Книга про буквы</h3>
                   <span class="product-card__price"><em>2 450 руб</em></span>
                   <p class="product-card__description">Гордон, Юрий</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide noSlide-320">
@@ -1907,7 +1812,7 @@
                   <h3 class="product-card__heading">Николай Ильин</h3>
                   <span class="product-card__price"><em>1 100 руб</em></span>
                   <p class="product-card__description fixed-text">Кричевский, Владимир</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide noSlide-320">
@@ -1916,7 +1821,7 @@
                   <h3 class="product-card__heading heading-320-fix">Модульные сетки в граф...</h3>
                   <span class="product-card__price"><em>1 450 руб</em></span>
                   <p class="product-card__description fixed-text-2">Мюллер-Брокманн, Йозеф</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide noSlide-320">
@@ -1925,7 +1830,7 @@
                   <h3 class="product-card__heading heading-320-fix">Эволюция графических ст...</h3>
                   <span class="product-card__price end"><em>3 200 руб</em></span>
                   <p class="product-card__description">Хеллер, Чваст</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
               <div class="swiper-slide edition-slide noSlide-320">
@@ -1934,7 +1839,7 @@
                   <h3 class="product-card__heading heading-320-fix">Искусство и визуальное в...</h3>
                   <span class="product-card__price end">2 200 руб</span>
                   <p class="product-card__description">Арнхейм, Рудольф</p>
-                  <button class="product-card__button">Заказать</button>
+                  <button class="product-card__button button-effects">Заказать</button>
                 </div>
               </div>
             </div>

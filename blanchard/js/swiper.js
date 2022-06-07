@@ -9,54 +9,6 @@ window.addEventListener('DOMContentLoaded', function () {
             delay: 10000
         }
     });
-    
-    const mySwiper = new Swiper('.gallery-slider', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-            clickable: true,
-
-            renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' + ' <span>/</span> ' + '<span class="' + totalClass + '"></span>';
-            }
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
-            450: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 15,
-                grid: {
-                    rows: 2,
-                },
-            },
-            1024: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 20,
-                grid: {
-                    rows: 2,
-                },
-            },
-            1600: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                grid: {
-                    rows: 2,
-                },
-            },
-        },
-
-    });
 
     const swiperProject = new Swiper('.swiper-project', {
         navigation: {
