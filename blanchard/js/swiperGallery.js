@@ -16,7 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      441: {
+      320: {
+        grid: {
+          rows: 1,
+          fill: "row"
+        },
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      450: {
         grid: {
           rows: 1,
           fill: "row"
@@ -25,7 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 30
       },
 
-      1200: {
+     768: {
+        grid: {
+          rows: 2,
+          fill: "row"
+        },
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+
+      1177: {
         grid: {
           rows: 2,
           fill: "row"
