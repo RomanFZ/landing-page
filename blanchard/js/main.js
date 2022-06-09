@@ -48,20 +48,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     setMenuListener();
 
-    // Events button
-
-    let eventBtn = document.querySelector('.events__button');
-
-    eventBtn.addEventListener('click', function () {
-        let cardEv1024 = document.querySelector('.card-1024-none');
-        cardEv1024.classList.remove('card-1024-none')
-        let cardEv = document.querySelectorAll('.card-slide-bottom')
-        cardEv.forEach((e) => {
-            e.classList.toggle('card-slide-bottom-show');
-        })
-        document.querySelector('.events__button').classList.add('events__button-off');
-    })
-
     // Author tabs
 
     const setTabsAuthor = (selectorAuthor, selectorBtn) => {
