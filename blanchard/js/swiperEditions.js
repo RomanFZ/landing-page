@@ -42,23 +42,28 @@
 
             slidesPerView: 'auto',
 
-
             navigation: {
                 nextEl: '.edit-next',
                 prevEl: '.edit-prev',
             },
+            spaceBetween: 20,
             breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20,
+                },
                 768: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
-                    spaceBetween: 15,
+                    spaceBetween: 30,
                 },
                 1024: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
-                    spaceBetween: 28,
+                    spaceBetween: 30,
                 },
-                1600: {
+                1400: {
                     slidesPerView: 3,
                     slidesPerGroup: 3,
                     spaceBetween: 44
