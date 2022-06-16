@@ -115,6 +115,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
         const screenWidth = screen.width;
 
+        if (screenWidth > 1023) {
+            document.querySelector('.burger-menu').classList.remove('hide-search');
+            document.querySelector('.header-top__logo-link').classList.remove('hide-search');
+        }
+
         if (screenWidth <= 1023) {
 
             searchOpenBtn.addEventListener('click', function (event) {
@@ -151,7 +156,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     onChangeSearchForm();
    window.addEventListener('resize', onChangeSearchForm)
-
 
     // tabs Editions
 
