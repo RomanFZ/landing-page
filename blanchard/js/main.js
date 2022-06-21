@@ -89,9 +89,22 @@ window.addEventListener('DOMContentLoaded', function () {
 
     burger.addEventListener('click', function () {
         document.querySelector(".header-top__logo-link").classList.toggle('hide')
-        document.querySelector(".search-form__btn").classList.toggle('hide')
+        document.querySelector(".btn-search-form").classList.toggle('hide')
         burger.classList.toggle('burger-menu__show')
         nav.classList.toggle('nav-show')
+        body.style = 'overflow: hidden';
+    })
+
+    const navButton = document.querySelectorAll('.nav__item-link')
+
+    navButton.forEach(item => {
+        item.addEventListener('click', function () {
+            document.querySelector(".header-top__logo-link").classList.remove('hide')
+            document.querySelector(".btn-search-form").classList.remove('hide')
+            burger.classList.remove('burger-menu__show')
+            nav.classList.remove('nav-show')
+            body.style = 'overflow: auto';
+        })
     })
 
     // Search Form

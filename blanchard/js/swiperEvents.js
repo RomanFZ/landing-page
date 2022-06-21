@@ -9,12 +9,9 @@ window.addEventListener('DOMContentLoaded', function () {
         pagination: {
             el: ".swiper-pagination-events",
         },
-        slidesPerView: 3,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
            525: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,

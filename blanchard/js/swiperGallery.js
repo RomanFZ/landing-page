@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   let gallerySlider = new Swiper(".gallery-slider", {
-    slidesPerView: 1,
     grid: {
-      rows: 2,
+      rows: 1,
       fill: "row"
     },
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
       el: ".gallery .gall-pagination",
       type: "fraction"
@@ -16,14 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      320: {
-        grid: {
-          rows: 1,
-          fill: "row"
-        },
-        slidesPerView: 1,
-        spaceBetween: 30
-      },
       450: {
         grid: {
           rows: 1,
