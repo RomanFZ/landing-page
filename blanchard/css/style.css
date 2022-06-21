@@ -1189,7 +1189,7 @@ h3 {
 
 .modal__description-container {
   height: 500px;
-  padding: 126px 0 0 40px;
+  padding: 126px 0 20px 40px;
 }
 
 .description-heading-author {
